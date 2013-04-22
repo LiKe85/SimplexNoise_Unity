@@ -1,0 +1,26 @@
+This little project implements a version of fBm using Simplex Noise to
+manipulate terrain in Unity3D. The noise function is applied several times to a
+terrain component to manipulate it. By setting the octaves, amplitude and
+frequency you can get different results from rocky mountains to gentle hills.
+
+To use the sources in your own unity project copy both scripts into your asset
+folder of the project. Create a new scene and add a terrain object to it.
+Add the CreateSimplexNoise.cs script to the terrain object.
+If you run the scene a button will appear. Clicking the button starts the fBm
+procedure. Because the heightmap of the terrain is manipulated, the change of
+the terrain is permanent – even if you stop the execution of the scene.
+
+The preset parameters are good for rocky mountains. 
+Octave should not exceed 28. Blend should be a value between 0 and 1 -
+see the source code for detailed information.
+
+To get a better understanding how different octaves, amplitudes and frequencies
+affects the resulting heightmap I found this site helpful (after blinding out
+the paper background):
+
+http://freespace.virgin.net/hugo.elias/models/m_perlin.htm 
+
+The implementation of the Simplex Noise is based on the java implementation
+by Stefan Gustavson presented in his article "Simplex noise demystified".
+
+Linda Kerkhoff | 2013
