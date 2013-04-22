@@ -8,7 +8,7 @@ folder of the project. Create a new scene and add a terrain object to it.
 Add the CreateSimplexNoise.cs script to the terrain object.
 If you run the scene a button will appear. Clicking the button starts the fBm
 procedure. Because the heightmap of the terrain is manipulated, the change of
-the terrain is permanent – even if you stop the execution of the scene.
+the terrain is permanent -- even if you stop the execution of the scene.
 
 The preset parameters are good for rocky mountains. 
 Octave should not exceed 28. Blend should be a value between 0 and 1 -
